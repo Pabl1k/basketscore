@@ -1,0 +1,11 @@
+@import "../../styles/base/variables";
+
+.standings {
+  border: 2px solid $color-main ;
+  //padding: 10px;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: max(25vw, 300px);
+
+  height: 70vh;
+}

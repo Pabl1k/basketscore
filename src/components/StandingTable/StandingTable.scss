@@ -1,0 +1,52 @@
+@import "../../styles/base/variables";
+
+.standing-table {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  width: fit-content;
+
+  &__title {
+    border-bottom: 1px solid $color-main;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    margin: 10px 0;
+  }
+
+  &__values {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 15px;
+
+    span {
+      margin: 0 5px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+
+    min-width: 20px;
+  }
+
+  &__team {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  &__team-logo {
+    height: 25px;
+    width: 25px;
+  }
+
+  &__name-container {
+    width: 170px;
+  }
+}
