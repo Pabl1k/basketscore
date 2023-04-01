@@ -1,0 +1,22 @@
+@import "../base/variables";
+
+* {
+  &::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $bs-black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $bs-red;
+    border-radius: 100vw;
+    border: 0.3em solid $bs-black;
+
+    &:hover {
+      background-color: lighten($bs-red, 5%);
+    }
+  }
+}
