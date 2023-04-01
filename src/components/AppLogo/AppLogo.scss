@@ -1,0 +1,16 @@
+@import "../../styles/base/variables";
+
+.app-logo {
+  background-color: $bs-red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 20%;
+
+  @media only screen and (max-width: 750px) {
+    min-height: 80px;
+    width: 100vw;
+  }
+}
