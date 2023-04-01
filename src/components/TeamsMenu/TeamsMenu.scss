@@ -1,0 +1,29 @@
+@import "../../styles/base/variables";
+
+$bs-teams-height: 100px;
+
+.teams-menu {
+  display: flex;
+  height: $bs-teams-height;
+  background-color: $bs-grey;
+
+  overflow-x: auto;
+
+  &__team {
+    border-right: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: darken($bs-grey, 5%);
+    }
+  }
+
+  &__team-logo {
+    height: 100%;
+  }
+}
