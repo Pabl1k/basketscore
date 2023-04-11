@@ -7,12 +7,11 @@ $bs-header-height: 90px;
   display: flex;
   position: fixed;
   justify-content: space-between;
+  z-index: 99;
 
   top: 0;
   height: $bs-header-height;
   width: 100vw;
-
-  color: #2165ad;
 
   @media only screen and (max-width: 750px) {
     flex-direction: column;
@@ -46,6 +45,7 @@ $bs-header-height: 90px;
     cursor: pointer;
     border-right: 1px solid $color-main;
     padding: 10px 0;
+    opacity: 0.7;
 
     &:last-child {
       margin-right: 0;
@@ -53,6 +53,7 @@ $bs-header-height: 90px;
 
     &:hover {
       background-color: darken($bs-grey, 5%);
+      opacity: 1;
     }
   }
 }
