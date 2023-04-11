@@ -63,8 +63,8 @@ export const useLayout = (target: BasicTarget) => {
   }, [typeof target === "function" ? undefined : target]);
 
   const xs = !!width && width <= 375;
-  const sm = !!width && width <= 450 || xs;
-  const md = !!width && width <= 750 || sm;
+  const sm = (!!width && width <= 450) || xs;
+  const md = (!!width && width <= 750) || sm;
 
   return { width, height, xs, sm, md };
 };

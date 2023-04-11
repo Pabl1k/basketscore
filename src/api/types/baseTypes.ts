@@ -1,4 +1,8 @@
-import { QueryKey, UseQueryOptions, UseQueryResult } from "@tanstack/react-query";
+import {
+  QueryKey,
+  UseQueryOptions,
+  UseQueryResult
+} from "@tanstack/react-query";
 import { AxiosError } from "axios";
 
 export type APICallResponse<T> = Promise<T>;
