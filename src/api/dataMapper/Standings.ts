@@ -5,7 +5,7 @@ import {
   NbaData,
   StandingsType,
   Team
-} from "../types/Standings";
+} from "../types/mappedType/Standings";
 import { Standing as nba } from "../nba/Standings/types";
 import { Standing as world } from "../world/Standings/types";
 

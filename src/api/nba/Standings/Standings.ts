@@ -2,7 +2,7 @@ import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { NbaApi } from "../../config";
 import { mapNbaDataToSameType } from "../../dataMapper/Standings";
 import { Standing as nbaStanding } from "./types";
-import { StandingsType } from "../../types/Standings";
+import { StandingsType } from "../../types/mappedType/Standings";
 
 const fetchStandings = async (): Promise<nbaStanding[]> => {
   return await NbaApi("standings", {

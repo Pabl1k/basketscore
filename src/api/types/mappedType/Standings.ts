@@ -1,5 +1,5 @@
-import { LeagueType } from "./common";
-import { Conference, Division } from "../nba/Standings/types";
+import { LeagueType } from "../common";
+import { Conference, Division } from "../../nba/Standings/types";
 
 // NBA part
 export interface NbaData {

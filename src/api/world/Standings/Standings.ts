@@ -2,7 +2,7 @@ import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { api } from "../../config";
 import { Standing as worldStanding } from "../../world/Standings/types";
 import { mapWorldDataToSameType } from "../../dataMapper/Standings";
-import { StandingsType } from "../../types/Standings";
+import { StandingsType } from "../../types/mappedType/Standings";
 
 const fetchStandings = async (
   leagueId: string
@@ -15,7 +15,7 @@ const fetchStandings = async (
 
 export const getWorldStandings = (
   leagueId: string,
-  enabled: boolean
+  enabled = true
 ): UseQueryResult<StandingsType[]> => {
   return useQuery(
     ["worldStandings", leagueId],

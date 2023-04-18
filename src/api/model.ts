@@ -11,7 +11,9 @@ export const pathCreator = (endpoint: string, params?: Params) => {
 
   const searchParams = new URLSearchParams(
     Object.entries(params).reduce((path, [key, value]) => {
-      path += `&${key}=${value}`;
+      if (value) {
+        path += `&${key}=${value}`;
+      }
 
       return path;
     }, "")

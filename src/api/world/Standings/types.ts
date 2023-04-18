@@ -1,30 +1,10 @@
-import { LeagueType } from "../../types/common";
+import { Country, League, Team } from "../../types/common";
 
 interface Group {
   name: string;
   points: number | null;
 }
 
-interface Team {
-  id: number;
-  name: string;
-  logo: string;
-}
-
-interface League {
-  id: number;
-  name: string;
-  type: LeagueType;
-  season: number;
-  logo: string;
-}
-
-interface Country {
-  id: number;
-  name: string;
-  code: string | null;
-  flag: string | null;
-}
 
 interface Result {
   total: number;
